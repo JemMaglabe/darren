@@ -1,0 +1,742 @@
+@media(max-width: 600px){
+    
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+background-color: #000000ee;
+    box-sizing: border-box;
+}
+
+
+.fav a h1 {
+    position: relative;
+   
+font-family: 'Verdana', Poppins;
+text-transform: uppercase;
+
+}
+
+.fav a img{
+    position: relative;
+    top: 0;
+    left: -1%;
+    height: 15px;
+    width: 3%;
+    animation: upWard 2s infinite alternate ;
+}
+
+@keyframes upWard{
+    from{
+transform: translateY(13px);
+    }
+    to{
+transform: translateY(5px);
+    }
+} 
+
+
+
+
+.fav a{
+    position: relative;
+ top: -20px;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+    letter-spacing:4px;
+    font-family: sans-serif;
+    
+    transition: backgrond-color 12s ease-in-out, -webkit-text-stroke 0.3s ease-in-out;
+}
+
+.fav a:hover{
+color: rgb(250, 250, 36);
+-webkit-text-stroke: 1px  #000000;
+
+}
+
+
+.navigation{
+    position: sticky;
+    top: 0;
+    padding-top: 1%;
+    z-index: 1;
+transition: background-color 0.3s ease-in;
+height: 30px;
+background-color: rgba(0, 0, 0, 0.911);
+border: 12px black;
+}
+
+.navigation:hover{
+    background-color: rgba(31, 30, 30, 0.671);
+
+}
+
+.navigation nav ul ol a{
+    font-size: 8px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 2px 5px;
+    transition: 0.3s;
+}
+
+.navigation nav ul ol{
+    position: relative;
+    top: -65px;
+left: -5%;
+margin-left: -5%;
+    display: inline;
+}
+
+.navigation ul ol a:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+
+
+.container{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    animation: float 5s infinite alternate;
+}
+@keyframes float{
+    from{
+transform: translateY(12px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+/* BOX 1 */
+
+.box1{
+    position: relative;
+    left: -10%;
+    background-color:  rgb(141, 14, 103);
+    width: 25%;
+    height: 110px;
+    border-radius: 250px;
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    animation: slideRight 3s ease-in-out;
+   
+}
+.music h2 a, .games h2 a, .food h2 a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+@keyframes slideRight{
+    from{
+       
+        height: 10px;
+        opacity: -4;
+        width: 5%;
+transform: translateX(700px);
+    }
+    to{
+        height: 110px;
+        opacity: 1;
+        width: 25%;
+transform: translateX(0);
+    }
+}
+
+ .box1:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(130, 16, 223);
+    background-color: rgba(190, 40, 40, 0.842);
+}
+
+.box1 img{
+    position: relative;
+top: 5px;
+    left: 12%;
+    z-index: -1;
+    width: 80%;
+    height: 100px;
+    animation: opacity 3s ease-in-out;
+}
+
+@keyframes opacity{
+    from{
+       
+    opacity: -5;
+    }
+    to{
+       
+opacity: 0;
+    }
+} 
+
+.music{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    border-radius: 250px;
+    transition: opacity 0.01s ease-in;
+}
+.music h2{
+    position: absolute;
+    left: 35%;
+    top: 40px;
+    font-size: 10px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'Cursive', sans-serif;
+}
+
+.music:hover{
+opacity: 0;
+}
+
+/* BOX 2 */
+
+.box2{
+    position: relative;
+    background-color: rgb(177, 18, 71);
+    width: 25%;
+    left: -5%;
+    height: 110px;
+    border-radius: 250px;
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in-out, background-color 0.3s ease-in-out;
+animation: slideUp 1.8s ease-in-out;
+}
+
+@keyframes slideUp{
+    from{
+        opacity: -3;
+        width: 5%;
+        height: 10px;
+        transform: translateX(600px);
+    }
+    to{
+        height: 110px;
+        opacity: 1;
+        width: 25%;
+        transform: translateX(0);
+    }
+}
+
+.box2:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(130, 16, 223);
+    background-color: rgba(190, 40, 40, 0.842);
+}
+
+.box2 img{
+    position: relative;
+top: 5px;
+    left: 12%;
+    z-index: -1;
+    width: 80%;
+    height: 100px;
+    animation: opacity 3s ease-in-out;
+}
+
+@keyframes opacity{
+    from{
+       
+    opacity: -5;
+    }
+    to{
+       
+opacity: 0;
+    }
+}
+
+.games{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    border-radius: 250px;
+    transition: opacity 0.01s ease-in;
+}
+.games h2{
+    position: absolute;
+    left: 33%;
+    top: 40px;
+    font-size: 10px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'Cursive', sans-serif;
+    
+}
+
+.games:hover{
+opacity: 0;
+}
+
+
+
+/* BOX 3 */
+
+.box3{
+    position: relative;
+    background-color: rgb(141, 14, 103);
+    width: 25%;
+    left: -2%;
+    height: 110px;
+    border-radius: 250px;
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    animation: slideLeft 0.7s ease-in-out;
+
+}
+
+@keyframes slideLeft{
+    from{
+        height: 0;
+        opacity: -1;
+        width: 1%;
+transform: translateX(1000px);
+    }
+    to{
+        height: 110px;
+        opacity: 1;
+        width: 25%;
+transform: translateX(0);
+    }
+}
+
+.box3:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(130, 16, 223);
+    background-color: rgba(190, 40, 40, 0.842);
+
+}
+
+.box3:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(130, 16, 223);
+}
+
+.box3 img{
+    position: relative;
+    top: 5px;
+    left: 12%;
+    z-index: -1;
+    width: 80%;
+    height: 100px;
+    animation: opacity 3s ease-in-out;
+}
+
+@keyframes opacity{
+    from{
+       
+    opacity: -5;
+    }
+    to{
+       
+opacity: 0;
+    }
+}
+
+.food{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    border-radius: 250px;
+    transition: opacity 0.01s ease-in;
+}
+.food h2{
+    position: absolute;
+    left: 35%;
+    top: 40px;
+    font-size: 10px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'Cursive', sans-serif;
+    
+}
+
+.food:hover{
+opacity: 0;
+}
+/* CONTAINER2 */
+.abt-container{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ABOUT MUSIC */
+
+ .msc{
+position: relative;
+top: -50px;
+left: 0;
+}
+.msc h2{
+position: absolute;
+font-size: 15px;
+text-transform: uppercase;
+font-family: 'Cursive', sans-serif;
+color: #fff;
+}
+
+.abt-music{
+    background-color: rgb(70, 70, 66);
+
+    position: relative;
+    width: 30%;
+    top: 0;
+    left: -12%;
+    height: 100px;
+    z-index: -1;
+    border-radius: 1rem;
+    
+}
+
+.abt-music p{
+    position: absolute;
+    top: 10px;
+    margin-right: 10px;
+    margin-left: 3% ;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    z-index: -1;
+}
+
+
+.con-music{
+position: relative; 
+   width: 30%;
+   top: 200px;
+   left: 0;
+    height: 300px;
+}
+.con-music img{
+    position: relative;
+    top: -200px;
+    left: -20%;
+    width: 120%;
+    height: 200px;
+    background-color: rgb(56, 56, 52);
+transition: opacity 2s ease-in;
+border-radius: 1rem;
+}
+
+.con-music img:hover{
+    opacity: -2;
+    }
+
+
+.con-music-img2{
+    position: absolute;
+    width: 33%;
+       top: 200px;
+       left: 3%;
+        height: 300px;
+    }
+    .con-music-img2 img{
+    position: relative;
+    top: -200px;
+    left: 155%;
+    width:107%;
+    height: 200px;
+    z-index: -1;
+    border-radius: 1rem;
+    
+    }
+
+    
+        
+/* music */
+.audios{
+    position: absolute;
+    left: 10%;
+    top: 200px;
+   
+    z-index: 0;
+
+}
+
+
+/* Audio controls */
+
+.secmusic{
+    position: relative;
+    background-color: rgba(102, 100, 100, 0.295);
+    top: 200px;
+    width: 100%;
+    height: 30rem;
+}
+
+
+.music1{
+    position: relative;
+    top: -100px;
+}
+
+.music1 audio{
+    height: 30px;
+    width: 80%;
+}
+
+
+.music1 p{
+    font-size: 15px;
+    font-family: 'Verdana', sans-serif;
+    color: #fff;
+}
+
+.music2{
+    position: relative;
+    
+    top: -100px;
+}
+
+.music2 audio{
+    height: 30px;
+    width: 80%;
+}
+
+.music2 p{
+    font-size: 15px;
+    font-family: 'Verdana', sans-serif;
+    color: #fff;
+}
+
+.music3{
+    position: relative;
+    top: -100px;
+
+}
+.music3 audio{
+    height: 30px;
+    width: 80%;
+}
+
+.music3 p{
+    font-size: 15px;
+    font-family: 'Verdana', sans-serif;
+    color: #fff;
+} 
+
+
+/* Games Container */
+.gms-container{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 0;
+}
+/* ABOUT GAMES */
+
+.secgames{
+    position: relative;
+    background-color: rgba(85, 14, 94, 0.253);
+    top: 165px;
+    width: 100%;
+    height: 20rem;
+}
+
+
+.abt-games{
+    position: relative;
+    width: 30%;
+    top: 0;
+    left: 48%;
+    height: 100px;
+    background-color: rgba(164, 94, 255, 0.514);
+    z-index: -1;
+    border-radius: 1rem;
+    
+}
+
+.abt-games p{
+    position: absolute;
+    margin-right: 3% ;
+margin-left: 3%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    z-index: -1;
+}
+
+.con-games{
+    position: relative;
+    width: 30%;
+   top: 200px;
+   left: -43%;
+    height: 300px;
+}
+.con-games img{
+    position: relative;
+left: -19%;
+top: -200px;
+height: 150px;
+width: 100%;
+background-color: rgb(66, 10, 73);
+transition: opacity 2s ease-in;
+border-radius: 1rem;
+
+}
+
+.con-games img:hover{
+opacity: -2;
+}
+
+.con-games-img2{
+position: absolute;
+width: 30%;
+   top: 200px;
+   left: -43%;
+    height: 300px;
+}
+.con-games-img2 img{
+position: relative;
+left: 170%;
+top: -200px;
+height: 150px;
+width: 100%;
+z-index: -1;
+border-radius: 1rem;
+
+}
+
+.gms{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    }
+    .gms h2{
+        font-size: 15px;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Cursive', sans-serif;
+    color: #fff;
+    }
+
+    
+
+/* Food Container */
+.fd-container{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 0;
+    height: 0;
+
+}
+/* ABOUT FOOD */
+.secfood{
+position: relative;
+    background-color: rgba(31, 17, 83, 0.315);
+    top: 93px;
+    width: 100%;
+    height: 25rem;
+    
+}
+
+
+.abt-food{
+    position: relative;
+    width: 30%;
+    top: 0;
+   height: 150px;
+    background-color: rgb(251, 255, 0);
+    z-index: -1;
+    border-radius: 1rem;
+}
+
+.abt-food p{
+    position: absolute;
+    margin-right:3% ;
+    margin-left: 3% ;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: -1;
+    font-size: 8px;
+}
+
+.con-food{
+    position: relative;
+    width: 30%;
+    top: 200px;
+    left: 0;
+     
+}
+
+.con-food img{
+    position: relative;
+    top: -200px;
+    left: 22%;
+    width: 100%;
+    height: 150px;
+transition: opacity 2s ease-in, transform 1s ease-out;
+border-radius: 1rem;
+}
+
+.con-food img:hover{
+    transform: scale(0.0);
+    opacity: -1;
+    }
+
+.con-food-img2{
+    position: absolute;
+    width: 30%;
+       top: 200px;
+       left: -42%;
+        
+}
+
+.con-food-img2 img{
+    position: relative;
+    top: -200px;
+    height: 150px;
+    width: 100%;
+    left: 350%;
+    z-index: -1;
+    border-radius: 1rem;
+}
+ 
+.fd{
+    position: relative;
+    top: -50px;
+    left: 10%;
+    
+    }
+    .fd h2{
+    position: absolute;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Cursive', sans-serif;
+    color: #fff;
+    
+    }
+
+  /* FOOTER */
+  .footer{
+    position: absolute;
+    color: #ccc;
+    width: 100%;
+    height: 100px;
+    
+    top: 320px;
+    background-color: #000;
+   
+}
+
+.footer footer{
+    position: relative;
+    top: 20px;
+    background-color: #000;
+}
+
+
+
+
+
+}

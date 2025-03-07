@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+font-family: 'Verdana', Poppins;
+}
+
+.navigation{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.767);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation nav ul ol{
+    display: inline;
+}
+
+.home{
+    text-align: center;
+}
+
+.home h1{
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 50px;
+    animation: slide 0.8s ease-in;
+}
+
+@keyframes slide{
+from{
+    opacity: 0.3;
+    transform: translateX(300px);
+}
+to{
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+
+.navigation nav ul ol a{
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.navigation ul ol a:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+
+.video-bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio: 16/9){
+    .video-bg{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width: 800px ){
+    .video-bg{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media(max-width: 500px ){
+
+    body{
+margin: 0;
+padding: 0;
+background-color: #000;
+    }
+
+    .navigation{
+        width: 100%;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.822);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       margin: 0;
+        
+    }
+
+    .video-bg{
+        position: relative;
+        top: 0;
+        left: 5%;
+      width: 400%;
+      height: 300px;
+      background-size: cover;
+      margin: 0;
+      
+    }
+
+    .home h1{
+        position: relative;
+        left: -300%;
+        top: 0;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .navigation nav ul ol{
+        position: relative;
+        left: -130%;
+        top: -100px;
+     
+    
+        
+    }
+
+    
+
+    .navigation nav ul ol a{
+        position: relative;
+        font-size: 10px;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        padding: 10px 10px;
+        border-radius: 3px;
+        transition: 0.3s;
+    }
+
+    .abt{
+        position: relative;
+        top: -50px;
+    }
+
+    .fav{
+        position: relative;
+        top: -25px;
+    }
+    .res{
+        position: relative;
+        top:0;
+    }
+    
+
+
+
+
+
+
+}
+
+
+

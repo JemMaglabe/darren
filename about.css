@@ -1,0 +1,1042 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+margin: 0;
+padding: 0;
+background-color: rgba(26, 25, 23, 0.973);
+
+}
+
+
+.about a{
+    font-size: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    
+    transition: backgrond-color 12s ease-in-out, -webkit-text-stroke 0.3s ease-in-out;
+}
+
+.about a:hover{
+color: rgb(250, 250, 36);
+-webkit-text-stroke: 1px  #000000;
+
+}
+
+.about a img{
+    position: relative;
+    left: -1%;
+    top: -10px;
+    border-radius: 3px;
+    animation: upWard 2s infinite alternate;
+
+}
+
+@keyframes upWard{
+    from{
+transform: translateY(13px);
+    }
+    to{
+transform: translateY(5px);
+    }
+}
+
+.about p{
+    color: whitesmoke;
+    margin-right: 45%;
+    opacity: 0.7;
+    font-family: sans-serif;
+}
+
+.navigation{
+    position: sticky;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.603);
+   padding-top: 1%;
+   transition: background-color 0.3s ease-in-out;
+}
+.navigation:hover{
+    background-color: rgba(31, 30, 30, 0.671);
+
+}
+
+.navigation nav ul ol a{
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 12px 15px;
+    transition: 0.3s;
+}
+
+.navigation nav ul ol{
+    position: relative;
+    top: -50px;
+    left: -5%;
+    display: inline;
+}
+
+.navigation ul ol a:hover{
+    background-color: #fff;
+    color: #000;
+
+}
+
+/* BG IMAGES */
+.bg-image1{
+    position: relative;
+}
+
+
+
+
+/* OPTIONS */
+
+
+.option1{
+    position: relative;
+    left: -15%;
+    top: 70px;
+}
+
+.option1 a{
+    color: rgb(255, 240, 108);
+    font-family: sans-serif;
+    background-color:  #0000006c;
+    padding: 12px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    animation: slideP 1s ease-in-out;
+}
+
+/* Paragraph section */
+
+.p-container{
+    position: relative;
+    top: 150px;
+    left: 8%;
+    width: 30%;
+padding: 3%;
+    border-radius: 1rem;
+    z-index: 0;
+    opacity: 0.6;
+    transition: transform 0.3s ease-in-out;
+    animation: slideP 1s ease-in-out;
+    background-color: #cccccc48;
+
+}
+@keyframes slideP{
+    from{
+        opacity: 0.3;
+       transform: translateX(-300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+
+
+.p-container:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+.p-container p{
+    font-family: sans-serif;
+    color: rgb(23, 216, 216) ;
+    margin-right: 20px;
+    z-index: 0;
+}
+
+
+
+.abt-picture img{
+    position: absolute;
+
+    left: 40%;
+    width: 60%;
+    top: 200px;
+    height: 300px;
+    z-index: -1;
+    border-radius: 30rem;
+    animation: slidePic 1s ease-in-out;
+}
+
+@keyframes slidePic{
+    from{
+        opacity: 0.3;
+        
+transform: translateX(300px);
+    }
+    to{
+opacity: 1;
+transform: translateX(0);
+    }
+}
+
+
+/* H-container */
+
+.h-container{
+    position: absolute;
+width:50% ;
+top: 180px;
+left: 10%;
+animation: slideP 1s ease-in-out;
+}
+
+.h-container h1 span{
+    font-family: 'Verdana';
+position: absolute;
+padding: 12px 15px;
+color: transparent;
+color: #ccc;
+border-radius: 1rem;
+z-index: -1;
+animation: slideTitle 10s infinite alternate;
+}
+
+@keyframes slideTitle{
+    from{
+transform: translateX(-60px);
+    }
+    to{
+transform: translateX(60px);
+    }
+}
+
+
+
+.darren{
+    opacity: 1;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    
+}
+
+/* Container2 */
+ .abt-container2{
+position: relative;
+top: 400px;
+z-index: -1;
+height: 1000px;
+}
+
+.dev-sec{
+position: relative;
+top: 200px;
+z-index: -1;
+}
+
+
+.abt-dev{
+position: absolute;
+top: -100px;
+left: 10%;
+}
+
+
+
+
+.abt-dev h1{
+font-family: 'Verdana';
+color: greenyellow;
+}
+
+.abt-color1{
+    position: relative;
+    height: 2px;
+    width: 100%;
+    top: -20px;
+    background-color: #ccc;
+    animation: slideBg 2s ease-in;
+}
+
+.abt-color2{
+    position: relative;
+    top: 100px;
+    height: 2px;
+    width: 100%;
+    background-color: #ccc;
+    animation: slideBg 3s ease-in;
+}
+
+
+.abt-vid img{
+    position: absolute;
+    height: 300px;
+    left:5%;
+    border-radius: 1rem;
+    z-index: 0;
+} 
+
+.p-container2{
+position: relative;
+background-color: #0000006c;
+padding-bottom: 10%;
+width: 90%;
+top: -30px;
+left: 10%;
+z-index: -1;
+animation: slideBg 0.5s ease-in;
+}
+
+
+@keyframes slideBg{
+    from{
+        opacity: 0;
+transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+transform: translateX(0);
+    }
+}
+
+.p-container2 h2{
+
+    position: relative;
+    top: 10px;
+    color: rgb(223, 0, 74);
+    left: -20%;
+}
+
+.p-container2  p{
+    font-family: sans-serif;
+position: relative;
+color: rgb(23, 216, 216);
+left: -5%;
+margin-left: 50%;
+}
+
+
+
+/* CONTAINER3 Skills */
+.skills-container2{
+    position: relative;
+    top: 150px;
+    z-index: -1;
+    height: 1000px;
+    }
+    
+    .skills-sec{
+    position: relative;
+    top: -50px;
+    z-index: -1;
+    }
+    
+    
+    .abt-skills{
+    position: absolute;
+    top: -100px;
+    left: 10%;
+    }
+    
+    
+    
+    
+    .abt-skills h1{
+    font-family: 'Verdana';
+    color: greenyellow;
+    }
+    
+    .skills-color1{
+        position: relative;
+        height: 2px;
+        width: 100%;
+        top: -20px;
+        background-color: #ccc;
+        animation: slideBg 2s ease-in;
+    }
+    
+    .skills-color2{
+        position: relative;
+        top: 100px;
+        height: 2px;
+        width: 100%;
+        background-color: #ccc;
+        animation: slideBg 3s ease-in;
+    }
+    
+    
+    .skills-vid img{
+        position: absolute;
+        height: 300px;
+        left:5%;
+        border-radius: 1rem;
+        z-index: 0;
+    } 
+    
+    .p-skills-container2{
+    position: relative;
+    background-color: #0000006c;
+    padding-bottom: 10%;
+    width: 90%;
+    top: -30px;
+    left: 10%;
+    z-index: -1;
+    animation: slideBg 0.5s ease-in;
+    }
+    
+    
+    @keyframes slideBg{
+        from{
+            opacity: 0;
+    transform: translateX(-50px);
+        }
+        to{
+            opacity: 1;
+    transform: translateX(0);
+        }
+    }
+    
+    .p-skills-container2 h2{
+    
+        position: relative;
+        top: 10px;
+        color: rgb(223, 0, 74);
+        left: -20%;
+    }
+    
+    .p-skills-container2  p{
+        font-family: sans-serif;
+    position: relative;
+    color: rgb(23, 216, 216);
+    left: -5%;
+    margin-left: 50%;
+    }
+    
+/* CONTAINER 4 */
+.contact-container2{
+    position: relative;
+    top: 0;
+    z-index: -1;
+    height: 500px;
+    }
+    
+    .contact-sec{
+    position: relative;
+    top: -250px;
+    z-index: -1;
+    }
+    
+    
+    .abt-contact{
+    position: absolute;
+    top: -100px;
+    left: 10%;
+    }
+    
+    
+    
+    
+    .abt-contact h1{
+    font-family: 'Verdana';
+    color: greenyellow;
+    }
+    
+    .contact-color1{
+        position: relative;
+        height: 2px;
+        width: 100%;
+        top: -20px;
+        background-color: #ccc;
+        animation: slideBg 2s ease-in;
+    }
+    
+    .contact-color2{
+        position: relative;
+        top: 100px;
+        height: 2px;
+        width: 100%;
+        background-color: #ccc;
+        animation: slideBg 3s ease-in;
+    }
+    
+    
+    .contact-vid img{
+        position: absolute;
+        height: 300px;
+        left:5%;
+        top: 20px;
+        border-radius: 1rem;
+        z-index: 0;
+    } 
+    
+    .p-contact-container2{
+    position: relative;
+    background-color: #0000006c;
+    padding-bottom: 5%;
+    width: 90%;
+    top: 0;
+    left: 10%;
+    z-index: -1;
+    animation: slideBg 0.5s ease-in;
+    }
+    
+    
+    @keyframes slideBg{
+        from{
+            opacity: 0;
+    transform: translateX(-50px);
+        }
+        to{
+            opacity: 1;
+    transform: translateX(0);
+        }
+    }
+    
+    .p-contact-container2 h2{
+    
+        position: relative;
+        top: 10px;
+        color: rgb(223, 0, 74);
+        left: -20%;
+    }
+    
+    .p-contact-container2  p{
+        font-family: sans-serif;
+    position: relative;
+    color: rgb(23, 216, 216);
+    left: -5%;
+    margin-left: 50%;
+    }
+    
+
+    /* FOOTER */
+    .footer{
+        position: absolute;
+        color: #ccc;
+        width: 100%;
+        height: 100px;
+        
+        top: 3000px;
+        background-color: #000;
+       
+    }
+    
+    .footer footer{
+        position: relative;
+        top: 20px;
+        background-color: #000;
+    }
+
+/* RESPONSIVE!!!!! */
+
+
+
+
+
+@media(max-width: 600px){
+
+
+
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    
+    body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(26, 25, 23, 0.973);
+    
+    } 
+    
+    .about a{
+        position: relative;
+        top: -20px;
+        left: -2%;
+        font-size: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        -webkit-text-stroke: 1px #ffffff;
+        color: transparent;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        
+        transition: backgrond-color 12s ease-in-out, -webkit-text-stroke 0.3s ease-in-out;
+    }
+    
+    .about a:hover{
+    color: rgb(250, 250, 36);
+    -webkit-text-stroke: 1px  #000000;
+    
+    }
+    
+    .about a img{
+        position: relative;
+        left: -1%;
+        top: 0;
+        height: 15px;
+        border-radius: 3px;
+        animation: upWard 2s infinite alternate;
+    
+    }
+    
+    @keyframes upWard{
+        from{
+    transform: translateY(13px);
+        }
+        to{
+    transform: translateY(5px);
+        }
+    }
+    
+    .about p{
+        color: whitesmoke;
+        margin-right: 45%;
+        opacity: 0.7;
+        font-family: sans-serif;
+    }
+    
+    .navigation{
+        position: sticky;
+        top:0;
+        background-color: rgba(0, 0, 0, 0.603);
+       padding-top: 1%;
+       height: 30px;
+       transition: background-color 0.3s ease-in-out;
+    }
+    .navigation:hover{
+        background-color: rgba(31, 30, 30, 0.671);
+    
+    }
+    
+    .navigation nav ul ol a{
+        font-size: 8px;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 2px 5px;
+        transition: 0.3s;
+    }
+    
+    .navigation nav ul ol{
+        position: relative;
+        top: -65px;
+        left: -2%;
+        margin-left: -30px;
+        margin-right: 20px;
+        display: inline;
+    }
+    
+    .navigation ul ol a:hover{
+        background-color: #fff;
+        color: #000;
+    
+    }
+    
+    
+    
+    
+    
+    /* OPTIONS */
+    .option1{
+        position: relative;
+        left: -15%;
+        top: 200px;
+    }
+    
+    .option1 a{
+        color: rgb(255, 240, 108);
+        font-family: sans-serif;
+        background-color:  #0000006c;
+        padding: 8px 12px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    
+    
+    /* Paragraph section */
+    
+    .p-container{
+        position: relative;
+        top: 150px;
+        left: 12%;
+        width: 40%;
+    padding: 2%;
+        background-color:  #0000006c;
+        border-radius: 1rem;
+        z-index: -1;
+    }
+    
+    
+    .p-container p{
+        font-family: sans-serif;
+        color: rgb(23, 216, 216);
+        font-size: 10px;
+    }
+    
+    
+    
+    .abt-picture img{
+        position: absolute;
+        left: 65%;
+        top: 250px;
+        width: 30%;
+        height: 150px;
+        border-radius: 30rem;
+    }
+    
+    
+    
+    /* H-container */
+    
+    .h-container{
+    position: relative;
+    top: 90px;
+    left: 10%;
+    }
+    
+    .h-container h1 span{
+        font-family: 'Verdana';
+    position: absolute;
+    padding: 12px 15px;
+    color: transparent;
+    color: #ccc;
+    border-radius: 1rem;
+    z-index: -1;
+    font-size: 15px;
+    }
+    
+    .darren{
+        opacity: 1;
+        color: transparent;
+        -webkit-text-stroke: 1px #ffffff;
+        
+    }
+    /* Container2 */
+     .abt-container2{
+    position: relative;
+    top: 350px;
+    z-index: -1;
+    height: 1000px;
+    }
+    
+    .dev-sec{
+    position: relative;
+    top:180px;
+    z-index: -1;
+    }
+    
+    
+    .abt-dev{
+    position: absolute;
+    top: -100px;
+    left: 10%;
+    }
+    
+    
+    
+    
+    .abt-dev h1{
+    font-family: 'Verdana';
+    color: greenyellow;
+    font-size: 25px;
+    }
+    
+    .abt-color1{
+        position: relative;
+        height: 2px;
+        width: 100%;
+        top: -20px;
+        background-color: #ccc;
+        animation: slideBg 2s ease-in;
+    }
+    
+    .abt-color2{
+        position: relative;
+        top: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #ccc;
+        animation: slideBg 3s ease-in;
+    }
+    
+    
+    .abt-vid video{
+        position: absolute;
+        height: 100px;
+        width: 40%;
+        left:5%;
+        border-radius: 1rem;
+        z-index: 0;
+    } 
+    
+    .p-container2{
+    position: relative;
+    background-color: #0000006c;
+    padding-bottom: 10px;
+    width: 90%;
+    height: 80px;
+    top: -39px;
+    left: 10%;
+    z-index: -1;
+    animation: slideBg 0.5s ease-in;
+    }
+    
+    @keyframes slideBg{
+        from{
+            opacity: 0;
+    transform: translateX(-50px);
+        }
+        to{
+            opacity: 1;
+    transform: translateX(0);
+        }
+    }
+    
+    .p-container2 h2{
+    
+        position: relative;
+        font-size: 10px;
+        top: 10px;
+        color: rgb(223, 0, 74);
+        left: -20%;
+        margin-bottom: 20px;
+    }
+    
+    .p-container2  p{
+        font-family: sans-serif;
+        font-size: 8px;
+    position: relative;
+    color: rgb(23, 216, 216);
+    left: -5%;
+    margin-left: 50%;
+    }
+    
+
+/* CONTAINER3 Skills */
+.skills-container2{
+    position: relative;
+    top: -350px;
+    z-index: -1;
+    }
+    
+    .skills-sec{
+        position: relative;
+        top:-800px;
+        z-index: -1;
+    }
+    
+    
+    .abt-skills{
+        position: absolute;
+        top: -100px;
+        left: 10%;
+    }
+    
+    
+    
+    
+    .abt-skills h1{
+        font-family: 'Verdana';
+        color: greenyellow;
+        font-size: 25px;
+    }
+    
+    .skills-color1{
+        position: relative;
+        height: 2px;
+        width: 100%;
+        top: -20px;
+        background-color: #ccc;
+        animation: slideBg 2s ease-in;
+    }
+    
+    .skills-color2{
+        position: relative;
+        top: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #ccc;
+        animation: slideBg 3s ease-in;
+    }
+    
+    
+    .skills-vid video{
+        position: absolute;
+        height: 100px;
+        width: 40%;
+        left:5%;
+        border-radius: 1rem;
+        z-index: 0;
+    } 
+    
+    .p-skills-container2{
+        position: relative;
+        background-color: #0000006c;
+        padding-bottom: 10px;
+        width: 90%;
+        height: 80px;
+        top: -39px;
+        left: 10%;
+        z-index: -1;
+        animation: slideBg 0.5s ease-in;
+    }
+    
+    
+    @keyframes slideBg{
+        from{
+            opacity: 0;
+    transform: translateX(-50px);
+        }
+        to{
+            opacity: 1;
+    transform: translateX(0);
+        }
+    }
+    
+    .p-skills-container2 h2{
+    
+        position: relative;
+        font-size: 10px;
+        top: 10px;
+        color: rgb(223, 0, 74);
+        left: -20%;
+        margin-bottom: 20px;
+    }
+    
+    .p-skills-container2  p{
+        font-family: sans-serif;
+        font-size: 8px;
+    position: relative;
+    color: rgb(23, 216, 216);
+    left: -5%;
+    margin-left: 50%;
+    }
+    
+/* CONTAINER 4 */
+.contact-container2{
+    position: relative;
+    top: -1000px;
+    z-index: -1;
+    }
+    
+    .contact-sec{
+        position: relative;
+        top:-1300px;
+        z-index: -1;
+    }
+    
+    
+    .abt-contact{
+        position: absolute;
+        top: -100px;
+        left: 10%;
+    }
+    
+    
+    
+    
+    .abt-contact h1{
+        font-family: 'Verdana';
+        color: greenyellow;
+        font-size: 25px;
+    }
+    
+    .contact-color1{
+        position: relative;
+        height: 2px;
+        width: 100%;
+        top: -20px;
+        background-color: #ccc;
+        animation: slideBg 2s ease-in;
+    }
+    
+    .contact-color2{
+        position: relative;
+        top: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #ccc;
+        animation: slideBg 3s ease-in;
+    }
+    
+    
+    .contact-vid video{
+        position: absolute;
+        height: 100px;
+        width: 40%;
+        left:5%;
+        border-radius: 1rem;
+        z-index: 0;
+    } 
+    
+    .p-contact-container2{
+        position: relative;
+        background-color: #0000006c;
+        padding-bottom: 5px;
+        width: 90%;
+        height: 80px;
+        top: -20px;
+        left: 10%;
+        z-index: -1;
+        animation: slideBg 0.5s ease-in;
+    }
+    
+    
+    @keyframes slideBg{
+        from{
+            opacity: 0;
+    transform: translateX(-50px);
+        }
+        to{
+            opacity: 1;
+    transform: translateX(0);
+        }
+    }
+    
+    .p-contact-container2 h2{
+    
+        position: relative;
+        font-size: 10px;
+        top: 10px;
+        color: rgb(223, 0, 74);
+        left: -20%;
+        margin-bottom: 20px;
+    }
+    
+    .p-contact-container2  p{
+        font-family: sans-serif;
+        font-size: 8px;
+    position: relative;
+    color: rgb(23, 216, 216);
+    left: -5%;
+    margin-left: 50%;
+    }
+
+    /* FOOTER */
+    .footer{
+        position: absolute;
+        color: #ccc;
+        width: 100%;
+        height: 100px;
+        z-index: 0;
+        top: 1600px;
+        background-color: #000;
+       
+    }
+    
+    .footer footer{
+        position: relative;
+        top: 20px;
+        background-color: #000;
+    }
+    
+}
